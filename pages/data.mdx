@@ -1,3 +1,9 @@
 # Accessing with your data
 
-TODO
+Glassium has a cascade data strucrture that starts with lowest possible layer to the high level one. The lowest layer is the `session`. Sessions are a segments of human experiences that currently is just an audio file with a date. The next layer is `transcription` layer that transcribes the audio file to text. Then using the transcribed data agents could create `memory` or use the data to build a context for them.
+
+## Sessions
+
+Each session consists of `date`, `duration`, `state`, optional `transctiption` and optional `classification`. 
+
+To get `sessions` you need to make a `GET` request to the `/v1/sessions` endpoint. You can also get a single session by making a `GET` request to the `/v1/sessions/:id` endpoint.
