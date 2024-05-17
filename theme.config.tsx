@@ -3,6 +3,11 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
   logo: <span>Glassium</span>,
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – Glassium',
+    }
+  },
   project: {
     link: 'https://glassium.org',
   },
