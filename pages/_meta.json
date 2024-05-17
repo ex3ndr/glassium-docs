@@ -1,7 +1,7 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "auth": "Authentication",
+  "data": "Accesing your data",
   "about": {
     "title": "About",
     "type": "page"

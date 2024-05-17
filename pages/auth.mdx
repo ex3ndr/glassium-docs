@@ -1,0 +1,11 @@
+# Authentication
+
+Glassium API is a simple HTTP API that uses `Bearer` tokens for authentication. You can create a token on the [Developer](https://glassium.org/dev) page.
+
+## Request example
+
+When you have a token, you can use it to authenticate your requests. Here is an example of how to use the token with `curl` to check the health of the API or validify of your token
+
+```bash
+curl -X GET -H "Authorization: Bearer <token>" https://api.glassium.org/v1/health
+```
